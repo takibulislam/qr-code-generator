@@ -30,8 +30,10 @@ img {
 }
 
 header h1 {
-  font-size: 21px;
-  font-weight: 500;
+  font-size: 30px;
+  color: #3498db;
+  font-weight: 700;
+  text-align: center;
 }
 header p {
   margin-top: 5px;
@@ -62,6 +64,7 @@ header p {
   background: #3498db;
   font-size: 17px;
   cursor: pointer;
+  color: azure;
 }
 
 .wrapper .qr-code {

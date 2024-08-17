@@ -1,9 +1,8 @@
 const wrapper = document.querySelector(".wrapper");
-qrInput = wrapper.querySelector(".form input");
 
-generateBtn = wrapper.querySelector(".form button");
-
-qrImg = wrapper.querySelector(".qr-code img");
+const qrInput = wrapper.querySelector(".form input");
+const generateBtn = wrapper.querySelector(".form button");
+const qrImg = wrapper.querySelector(".qr-code img");
 
 generateBtn.addEventListener("click", () => {
   let qrValue = qrInput.value;
@@ -14,7 +13,7 @@ generateBtn.addEventListener("click", () => {
   }
   generateBtn.innerText = "Generating Qr Code";
 
-  qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrValue}`;
+  qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=170x170&data=${qrValue}`;
   wrapper.classList.add("active");
 
   qrImg.addEventListener("load", () => {
